@@ -1,4 +1,4 @@
-/* Ovalvi — request access: a four-step qualification form.
+/* Ovalvi request access: a four-step qualification form.
    Nothing is submitted anywhere; the last step is a mocked confirmation. */
 (function () {
   'use strict';
@@ -103,7 +103,7 @@
           return;
         }
         if (FREE_DOMAINS.indexOf(lower.split('@')[1]) !== -1) {
-          setFieldError(field, 'Use your work email — we verify the company domain.');
+          setFieldError(field, 'Use your work email. We verify the company domain.');
           firstBad = firstBad || field;
           return;
         }
@@ -167,7 +167,7 @@
         ['Work email', val('email')],
         ['Job title', val('jobTitle')],
         ['Country', val('country')],
-        ['Phone', val('phone') || '—']
+        ['Phone', val('phone') || 'Not provided']
       ],
       org: [
         ['Company', val('company')],
@@ -175,15 +175,15 @@
         ['Company size', radio('employees')],
         ['Industry', val('industry')],
         ['Regions', checks('regions').join(', ')],
-        ['Tools in use', checks('tools').join(', ') || '—']
+        ['Tools in use', checks('tools').join(', ') || 'None selected']
       ],
       deployment: [
         ['Expected seats', formatSeats(SEATS[Number(seatsInput.value)])],
         ['Rollout profile', bandFor(SEATS[Number(seatsInput.value)])],
         ['Use cases', checks('useCases').join(', ')],
-        ['Requirements', checks('requirements').join(', ') || '—'],
+        ['Requirements', checks('requirements').join(', ') || 'None selected'],
         ['Timeline', radio('timeline')],
-        ['Notes', val('notes') || '—']
+        ['Notes', val('notes') || 'Not provided']
       ]
     };
   }

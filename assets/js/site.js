@@ -1,4 +1,4 @@
-/* Ovalvi — marketing site interactions */
+/* Ovalvi marketing site interactions */
 (function () {
   'use strict';
 
@@ -65,7 +65,7 @@
       q: 'What did we tell EMEA customers about the Q3 pricing change?',
       a: 'Renewals signed before <mark>1 October</mark> keep current list pricing for one full term. The exception was confirmed for all EMEA accounts, and the renewal desk has it loaded. Nothing was promised beyond that term.',
       sources: [
-        { title: 'Q3 Pricing — All-Hands', space: 'Leadership', t: '12:04' },
+        { title: 'Q3 Pricing All-Hands', space: 'Leadership', t: '12:04' },
         { title: 'EMEA Customer Sync', space: 'EMEA Sales', t: '03:41' },
         { title: 'Partner Briefing (DE)', space: 'Partnerships', t: '27:18' }
       ],
@@ -76,7 +76,7 @@
       q: 'Which controls did the security team commit to before the audit?',
       a: 'Three: <mark>customer-managed keys</mark> by end of quarter, audit log streaming to Splunk, and SCIM deprovisioning within 15 minutes of an IdP change. The residency question was deferred to the Frankfurt migration.',
       sources: [
-        { title: 'Security Review — Q2', space: 'Governance', t: '08:52' },
+        { title: 'Security Review Q2', space: 'Governance', t: '08:52' },
         { title: 'Frankfurt Migration Plan', space: 'Engineering', t: '19:07' },
         { title: 'Audit Readiness Standup', space: 'Governance', t: '04:33' }
       ],
@@ -85,10 +85,10 @@
     {
       label: 'Onboarding',
       q: 'What do new hires have to complete in their first week?',
-      a: 'Security onboarding, the data handling module, and the tooling walkthrough — all three are <mark>acknowledgement-tracked</mark>. Managers were asked to add a team-specific recording by day four.',
+      a: 'Security onboarding, the data handling module, and the tooling walkthrough. All three are <mark>acknowledgement-tracked</mark>. Managers were asked to add a team-specific recording by day four.',
       sources: [
         { title: 'Security Onboarding', space: 'Onboarding', t: '00:41' },
-        { title: 'Week One — Manager Guide', space: 'People', t: '11:26' },
+        { title: 'Week One Manager Guide', space: 'People', t: '11:26' },
         { title: 'Tooling Walkthrough', space: 'Onboarding', t: '05:58' }
       ],
       timing: '1.6s', scanned: '4,318'
@@ -96,9 +96,9 @@
     {
       label: 'Roadmap',
       q: 'Did anyone commit to a delivery date for the Nordics rollout?',
-      a: 'No firm date on record. The closest was <mark>“end of Q1, dependent on the Dublin region”</mark> in the regional planning session — explicitly flagged as an estimate, not a commitment, twice.',
+      a: 'No firm date on record. The closest was <mark>“end of Q1, dependent on the Dublin region”</mark> in the regional planning session, explicitly flagged as an estimate, not a commitment, twice.',
       sources: [
-        { title: 'Regional Planning — Nordics', space: 'Leadership', t: '31:12' },
+        { title: 'Regional Planning Nordics', space: 'Leadership', t: '31:12' },
         { title: 'Dublin Region Readout', space: 'Engineering', t: '14:45' },
         { title: 'Nordics Field Sync', space: 'EMEA Sales', t: '09:20' }
       ],

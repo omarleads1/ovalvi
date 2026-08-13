@@ -1,4 +1,4 @@
-/* Ovalvi — login mockup.
+/* Ovalvi login mockup.
    There is no signup and no account store: every path ends in a friendly dead end. */
 (function () {
   'use strict';
@@ -73,7 +73,7 @@
       submit.textContent = original;
       showAlert(
         'No identity provider is configured for ' + parsed.domain + '. ' +
-        'This is a preview environment — Ovalvi accounts are provisioned by an administrator after onboarding.'
+        'This is a preview environment. Ovalvi accounts are provisioned by an administrator after onboarding.'
       );
     }, 1400);
   });
