@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request access | Ovalvi</title>
+<meta name="description" content="Ovalvi is provisioned per organization. Tell us about your deployment and we'll come back within one business day.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg transform='rotate(-28 16 16)' fill='none' stroke='%230a0b0f' stroke-width='2.2'%3E%3Cellipse cx='16' cy='16' rx='12.8' ry='7.8'/%3E%3Cellipse cx='16' cy='16' rx='7.8' ry='12.8' opacity='.18' stroke-width='1.9'/%3E%3C/g%3E%3Cpath d='M13.8 12.2v7.6l6.8-3.8z' fill='%232b49ff' stroke='%232b49ff' stroke-width='1.3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="ra-shell">
+  <!-- Aside -->
+  <aside class="ra-aside">
+    <a class="logo logo--lg" href="index.html" aria-label="Ovalvi home">
+      <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <g transform="rotate(-28 16 16)">
+          <ellipse class="lm-ring-a" cx="16" cy="16" rx="12.8" ry="7.8" stroke="currentColor" stroke-width="2.5"/>
+          <ellipse class="lm-ring-b" cx="16" cy="16" rx="7.8" ry="12.8" stroke="currentColor" stroke-width="1.9"/>
+        </g>
+        <path class="lm-play" d="M13.8 12.2v7.6l6.8-3.8z"/>
+      </svg>
+      Ovalvi
+    </a>
+
+    <h2>Request access</h2>
+    <p>Ovalvi is provisioned per organization, so pricing depends on seats, regions, retention, and residency. Four short steps and we'll scope it with you.</p>
+
+    <ol class="ra-steps" id="raSteps">
+      <li class="is-active" data-step="1"><span class="num">1</span><span><b>About you</b><span>Who we should talk to</span></span></li>
+      <li data-step="2"><span class="num">2</span><span><b>Organization</b><span>Size, industry, footprint</span></span></li>
+      <li data-step="3"><span class="num">3</span><span><b>Deployment</b><span>Seats, use cases, controls</span></span></li>
+      <li data-step="4"><span class="num">4</span><span><b>Review</b><span>Confirm and submit</span></span></li>
+    </ol>
+
+    <div class="ra-aside-foot">
+      <div class="ra-sla">
+        <b>One business day</b>
+        A solutions engineer reviews every request and replies with a scoped proposal, or tells you honestly if Ovalvi isn't the right fit.
+      </div>
+      <div class="ra-trust">
+        <span>SOC 2 Type II</span>
+        <span>ISO 27001</span>
+        <span>GDPR</span>
+        <span>EU residency</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Form -->
+  <main class="ra-main">
+    <div class="ra-main-head">
+      <a href="index.html">← Back to ovalvi.com</a>
+      <a href="login.html">Already onboarded? Log in</a>
+    </div>
+
+    <div class="ra-progress" id="raProgress" aria-hidden="true"><i style="width:25%"></i></div>
+
+    <form id="raForm" novalidate>
+
+      <!-- ---------- Step 1 ---------- -->
+      <section class="ra-step is-active" data-step="1">
+        <p class="kicker">Step 1 of 4</p>
+        <h1>Let's start with you.</h1>
+        <p class="sub">We only use this to route your request to the right solutions engineer.</p>
+
+        <div class="form-grid">
+          <div class="field" data-field>
+            <label for="firstName">First name</label>
+            <input class="input" id="firstName" name="firstName" data-required data-label="First name" autocomplete="given-name">
+            <p class="msg"></p>
+          </div>
+          <div class="field" data-field>
+            <label for="lastName">Last name</label>
+            <input class="input" id="lastName" name="lastName" data-required data-label="Last name" autocomplete="family-name">
+            <p class="msg"></p>
+          </div>
+          <div class="field span2" data-field>
+            <label for="email">Work email <span class="hint">(company domains only)</span></label>
+            <input class="input" type="email" id="email" name="email" data-required data-type="workEmail" data-label="Work email" placeholder="you@company.com" autocomplete="email" spellcheck="false">
+            <p class="msg"></p>
+          </div>
+          <div class="field" data-field>
+            <label for="jobTitle">Job title</label>
+            <input class="input" id="jobTitle" name="jobTitle" data-required data-label="Job title" placeholder="e.g. Director of Internal Communications" autocomplete="organization-title">
+            <p class="msg"></p>
+          </div>
+          <div class="field" data-field>
+            <label for="country">Country</label>
+            <select class="select" id="country" name="country" data-required data-label="Country">
+              <option value="">Select a country</option>
+              <optgroup label="Europe">
+                <option>Austria</option><option>Belgium</option><option>Czechia</option>
+                <option>Denmark</option><option>Estonia</option><option>Finland</option>
+                <option>France</option><option>Germany</option><option>Greece</option>
+                <option>Hungary</option><option>Ireland</option><option>Italy</option>
+                <option>Luxembourg</option><option>Netherlands</option><option>Norway</option>
+                <option>Poland</option><option>Portugal</option><option>Romania</option>
+                <option>Spain</option><option>Sweden</option><option>Switzerland</option>
+                <option>United Kingdom</option>
+              </optgroup>
+              <optgroup label="Americas">
+                <option>Brazil</option><option>Canada</option><option>Mexico</option>
+                <option>United States</option>
+              </optgroup>
+              <optgroup label="Asia-Pacific &amp; other">
+                <option>Australia</option><option>India</option><option>Japan</option>
+                <option>Singapore</option><option>South Korea</option>
+                <option>United Arab Emirates</option><option>Other</option>
+              </optgroup>
+            </select>
+            <p class="msg"></p>
+          </div>
+          <div class="field span2" data-field>
+            <label for="phone">Phone <span class="hint">(optional, speeds up scheduling)</span></label>
+            <input class="input" id="phone" name="phone" data-label="Phone" placeholder="+49 …" autocomplete="tel">
+            <p class="msg"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Step 2 ---------- -->
+      <section class="ra-step" data-step="2">
+        <p class="kicker">Step 2 of 4</p>
+        <h1>Tell us about your organization.</h1>
+        <p class="sub">This determines your deployment model, residency options, and commercial terms.</p>
+
+        <div class="form-grid">
+          <div class="field" data-field>
+            <label for="company">Company</label>
+            <input class="input" id="company" name="company" data-required data-label="Company" autocomplete="organization">
+            <p class="msg"></p>
+          </div>
+          <div class="field" data-field>
+            <label for="website">Company website</label>
+            <input class="input" id="website" name="website" data-required data-label="Company website" placeholder="company.com" spellcheck="false">
+            <p class="msg"></p>
+          </div>
+        </div>
+
+        <fieldset class="fieldset" data-field data-group="radio" data-name="employees" data-min="1" data-label="Company size">
+          <span class="legend">Company size <span class="req">*</span></span>
+          <div class="opt-grid">
+            <label class="opt"><input type="radio" name="employees" value="250–1,000"><b>250–1,000</b><span>Single region</span></label>
+            <label class="opt"><input type="radio" name="employees" value="1,000–5,000"><b>1,000–5,000</b><span>Multi-region</span></label>
+            <label class="opt"><input type="radio" name="employees" value="5,000–20,000"><b>5,000–20,000</b><span>Multi-entity</span></label>
+            <label class="opt"><input type="radio" name="employees" value="20,000–75,000"><b>20,000–75,000</b><span>Global</span></label>
+            <label class="opt"><input type="radio" name="employees" value="75,000+"><b>75,000+</b><span>Enterprise group</span></label>
+            <label class="opt"><input type="radio" name="employees" value="Under 250"><b>Under 250</b><span>Not our usual fit</span></label>
+          </div>
+          <p class="msg"></p>
+        </fieldset>
+
+        <div class="fieldset" data-field>
+          <label class="legend" for="industry">Industry <span class="req">*</span></label>
+          <select class="select" id="industry" name="industry" data-required data-label="Industry" style="max-width:420px">
+            <option value="">Select an industry</option>
+            <option>Software &amp; technology</option>
+            <option>Financial services &amp; insurance</option>
+            <option>Manufacturing &amp; industrial</option>
+            <option>Pharmaceutical &amp; life sciences</option>
+            <option>Retail &amp; consumer goods</option>
+            <option>Energy &amp; utilities</option>
+            <option>Telecommunications &amp; media</option>
+            <option>Transport &amp; logistics</option>
+            <option>Professional services &amp; consulting</option>
+            <option>Public sector &amp; education</option>
+            <option>Healthcare providers</option>
+            <option>Other</option>
+          </select>
+          <p class="msg"></p>
+        </div>
+
+        <fieldset class="fieldset" data-field data-group="checkbox" data-name="regions" data-min="1" data-label="Regions of operation">
+          <span class="legend">Where do you operate? <span class="req">*</span> <span class="legend-hint">Select all that apply</span></span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="regions" value="Western Europe"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Western Europe</label>
+            <label class="chip"><input type="checkbox" name="regions" value="Nordics"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Nordics</label>
+            <label class="chip"><input type="checkbox" name="regions" value="Central &amp; Eastern Europe"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Central &amp; Eastern Europe</label>
+            <label class="chip"><input type="checkbox" name="regions" value="United Kingdom &amp; Ireland"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>UK &amp; Ireland</label>
+            <label class="chip"><input type="checkbox" name="regions" value="North America"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>North America</label>
+            <label class="chip"><input type="checkbox" name="regions" value="Latin America"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Latin America</label>
+            <label class="chip"><input type="checkbox" name="regions" value="Middle East &amp; Africa"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Middle East &amp; Africa</label>
+            <label class="chip"><input type="checkbox" name="regions" value="Asia-Pacific"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Asia-Pacific</label>
+          </div>
+          <p class="msg"></p>
+        </fieldset>
+
+        <fieldset class="fieldset" data-field data-group="checkbox" data-name="tools" data-label="Tools in use">
+          <span class="legend">What are you using today? <span class="legend-hint">Optional. Helps us plan migration</span></span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="tools" value="Loom"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Loom</label>
+            <label class="chip"><input type="checkbox" name="tools" value="Tella"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tella</label>
+            <label class="chip"><input type="checkbox" name="tools" value="Microsoft Stream"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Microsoft Stream</label>
+            <label class="chip"><input type="checkbox" name="tools" value="Vimeo Enterprise"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Vimeo Enterprise</label>
+            <label class="chip"><input type="checkbox" name="tools" value="Zoom Clips"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Zoom Clips</label>
+            <label class="chip"><input type="checkbox" name="tools" value="Panopto"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Panopto</label>
+            <label class="chip"><input type="checkbox" name="tools" value="An internal build"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>An internal build</label>
+            <label class="chip"><input type="checkbox" name="tools" value="Nothing structured"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Nothing structured</label>
+          </div>
+          <p class="msg"></p>
+        </fieldset>
+      </section>
+
+      <!-- ---------- Step 3 ---------- -->
+      <section class="ra-step" data-step="3" id="talk">
+        <p class="kicker">Step 3 of 4</p>
+        <h1>What would the deployment look like?</h1>
+        <p class="sub">Rough numbers are fine. This is what we price against.</p>
+
+        <div class="fieldset">
+          <span class="legend">Expected seats in year one</span>
+          <div class="range-wrap">
+            <div class="range-top">
+              <b id="seatsValue">2,500</b>
+              <span id="seatsBand">Multi-region rollout · dedicated onboarding</span>
+            </div>
+            <input type="range" id="seats" name="seats" min="0" max="10" step="1" value="4" aria-label="Expected seats in year one">
+            <div class="range-scale">
+              <span>250</span><span>2,500</span><span>25,000</span><span>100,000+</span>
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="fieldset" data-field data-group="checkbox" data-name="useCases" data-min="1" data-label="Primary use cases">
+          <span class="legend">Primary use cases <span class="req">*</span> <span class="legend-hint">Select all that apply</span></span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="useCases" value="Leadership &amp; all-hands comms"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Leadership &amp; all-hands comms</label>
+            <label class="chip"><input type="checkbox" name="useCases" value="Onboarding &amp; training"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Onboarding &amp; training</label>
+            <label class="chip"><input type="checkbox" name="useCases" value="Sales enablement"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sales enablement</label>
+            <label class="chip"><input type="checkbox" name="useCases" value="Customer calls &amp; QBRs"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Customer calls &amp; QBRs</label>
+            <label class="chip"><input type="checkbox" name="useCases" value="Engineering &amp; product handoffs"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Engineering handoffs</label>
+            <label class="chip"><input type="checkbox" name="useCases" value="Field &amp; frontline operations"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Field &amp; frontline ops</label>
+            <label class="chip"><input type="checkbox" name="useCases" value="Support quality &amp; QA"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Support quality &amp; QA</label>
+            <label class="chip"><input type="checkbox" name="useCases" value="Compliance &amp; recordkeeping"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Compliance &amp; recordkeeping</label>
+          </div>
+          <p class="msg"></p>
+        </fieldset>
+
+        <fieldset class="fieldset" data-field data-group="checkbox" data-name="requirements" data-label="Security requirements">
+          <span class="legend">Security &amp; compliance requirements <span class="legend-hint">Optional. We'll pre-fill your security review</span></span>
+          <div class="check-list">
+            <label class="check"><input type="checkbox" name="requirements" value="SAML 2.0 SSO"><span><b>SAML 2.0 SSO</b><span>Okta, Entra ID, Ping, Google</span></span></label>
+            <label class="check"><input type="checkbox" name="requirements" value="SCIM provisioning"><span><b>SCIM provisioning</b><span>Automated joiner / leaver flows</span></span></label>
+            <label class="check"><input type="checkbox" name="requirements" value="EU data residency"><span><b>EU data residency</b><span>Frankfurt or Dublin only</span></span></label>
+            <label class="check"><input type="checkbox" name="requirements" value="Customer-managed keys"><span><b>Customer-managed keys</b><span>BYOK via your KMS</span></span></label>
+            <label class="check"><input type="checkbox" name="requirements" value="Retention &amp; legal hold"><span><b>Retention &amp; legal hold</b><span>Per-space policies, eDiscovery export</span></span></label>
+            <label class="check"><input type="checkbox" name="requirements" value="Audit log streaming"><span><b>Audit log streaming</b><span>Splunk, Datadog, or S3</span></span></label>
+            <label class="check"><input type="checkbox" name="requirements" value="HIPAA BAA"><span><b>HIPAA BAA</b><span>Regulated health data</span></span></label>
+            <label class="check"><input type="checkbox" name="requirements" value="Private networking"><span><b>Private networking</b><span>VPC peering / PrivateLink</span></span></label>
+          </div>
+          <p class="msg"></p>
+        </fieldset>
+
+        <fieldset class="fieldset" data-field data-group="radio" data-name="timeline" data-min="1" data-label="Timeline">
+          <span class="legend">When would you want to be live? <span class="req">*</span></span>
+          <div class="opt-grid cols2">
+            <label class="opt"><input type="radio" name="timeline" value="Within 30 days"><b>Within 30 days</b><span>Budget approved, replacing a tool</span></label>
+            <label class="opt"><input type="radio" name="timeline" value="This quarter"><b>This quarter</b><span>Evaluating now</span></label>
+            <label class="opt"><input type="radio" name="timeline" value="Next 6 months"><b>Next 6 months</b><span>Planning and budgeting</span></label>
+            <label class="opt"><input type="radio" name="timeline" value="Researching"><b>Researching</b><span>No timeline yet</span></label>
+          </div>
+          <p class="msg"></p>
+        </fieldset>
+
+        <div class="fieldset" data-field>
+          <label class="legend" for="notes">Anything else we should know? <span class="legend-hint">Optional</span></label>
+          <textarea class="textarea" id="notes" name="notes" data-label="Notes" placeholder="Existing contracts, procurement process, languages you need, a specific security control…"></textarea>
+          <p class="msg"></p>
+        </div>
+      </section>
+
+      <!-- ---------- Step 4 ---------- -->
+      <section class="ra-step" data-step="4">
+        <p class="kicker">Step 4 of 4</p>
+        <h1>Check it over.</h1>
+        <p class="sub">One last look before this goes to a solutions engineer.</p>
+
+        <div class="review-card" id="reviewCard"></div>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" name="consent">
+          <span>I agree that Ovalvi may contact me about this request and store the details in accordance with the <a href="#">Privacy Policy</a> and <a href="#">DPA</a>.</span>
+        </label>
+      </section>
+
+      <!-- ---------- Actions ---------- -->
+      <div class="ra-actions" id="raActions">
+        <button class="btn btn-line" type="button" id="raBack" style="visibility:hidden">Back</button>
+        <span class="spacer"></span>
+        <span class="step-count" id="raCount">01 / 04</span>
+        <button class="btn btn-primary" type="button" id="raNext">Continue</button>
+      </div>
+
+      <div class="ra-error" id="raError">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.2v.1"/></svg>
+        <span id="raErrorText">Please complete the highlighted fields.</span>
+      </div>
+    </form>
+
+    <!-- ---------- Success ---------- -->
+    <div class="ra-done" id="raDone">
+      <div class="seal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h1>Request received.</h1>
+      <p id="raDoneText">A solutions engineer will reply within one business day.</p>
+
+      <div class="ra-ref">
+        <span>Reference</span>
+        <b id="raRef">OVL-0000-0000</b>
+      </div>
+
+      <div class="ra-next">
+        <h4>WHAT HAPPENS NEXT</h4>
+        <ol>
+          <li>We verify your domain and match you to a solutions engineer in your region.</li>
+          <li>A 30-minute scoping call covering seats, residency, retention, and identity.</li>
+          <li>A written proposal plus a security package for your review team.</li>
+          <li>If it's a fit, your workspace is provisioned and your admins get their credentials.</li>
+        </ol>
+      </div>
+
+      <p class="small muted" style="margin-top:28px">Ovalvi has no self-serve signup. Accounts only exist once an organization is onboarded.</p>
+      <a class="btn btn-line" href="index.html" style="margin-top:20px">Back to ovalvi.com</a>
+    </div>
+  </main>
+</div>
+
+<script src="assets/js/request-access.js"></script>
+</body>
+</html>

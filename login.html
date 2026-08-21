@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in | Ovalvi</title>
+<meta name="description" content="Sign in to Ovalvi with your organization's identity provider.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg transform='rotate(-28 16 16)' fill='none' stroke='%230a0b0f' stroke-width='2.2'%3E%3Cellipse cx='16' cy='16' rx='12.8' ry='7.8'/%3E%3Cellipse cx='16' cy='16' rx='7.8' ry='12.8' opacity='.18' stroke-width='1.9'/%3E%3C/g%3E%3Cpath d='M13.8 12.2v7.6l6.8-3.8z' fill='%232b49ff' stroke='%232b49ff' stroke-width='1.3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="auth">
+  <!-- Brand panel -->
+  <aside class="auth-aside">
+    <a class="logo logo--lg" href="index.html" aria-label="Ovalvi home">
+      <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <g transform="rotate(-28 16 16)">
+          <ellipse class="lm-ring-a" cx="16" cy="16" rx="12.8" ry="7.8" stroke="currentColor" stroke-width="2.5"/>
+          <ellipse class="lm-ring-b" cx="16" cy="16" rx="7.8" ry="12.8" stroke="currentColor" stroke-width="1.9"/>
+        </g>
+        <path class="lm-play" d="M13.8 12.2v7.6l6.8-3.8z"/>
+      </svg>
+      Ovalvi
+    </a>
+
+    <div class="auth-aside-body">
+      <p class="auth-quote">Every recording your company makes, captured, transcribed, and <span>answerable in seconds</span>.</p>
+      <ul class="auth-points">
+        <li>4,318 recordings searched per question</li>
+        <li>Answers cited to the exact timestamp</li>
+        <li>Scoped to what each person may already watch</li>
+      </ul>
+    </div>
+
+    <div class="auth-trust">
+      <span>SOC 2 Type II</span>
+      <span>ISO 27001</span>
+      <span>GDPR</span>
+      <span>EU residency</span>
+      <span>SAML · SCIM</span>
+    </div>
+  </aside>
+
+  <!-- Sign-in panel -->
+  <main class="auth-main">
+    <div class="auth-main-head">
+      <a href="index.html">← Back to ovalvi.com</a>
+    </div>
+
+    <div class="auth-card">
+      <h1>Sign in to Ovalvi</h1>
+      <p class="sub">Use the work email your administrator provisioned. We'll route you to your organization's identity provider.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field" id="emailField">
+          <label for="email">Work email</label>
+          <input class="input" type="email" id="email" name="email" placeholder="you@company.com" autocomplete="username" spellcheck="false">
+          <p class="msg" id="emailMsg">Enter your work email address.</p>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" id="loginSubmit" style="margin-top:20px">Continue with SSO</button>
+      </form>
+
+      <div class="auth-alert" id="loginAlert" role="alert">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.2v.1"/></svg>
+        <span id="loginAlertText"></span>
+      </div>
+
+      <div class="auth-sep">or continue with</div>
+
+      <button class="sso-btn" type="button" data-idp="Okta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg>
+        Okta
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <button class="sso-btn" type="button" data-idp="Microsoft Entra ID">
+        <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5" opacity=".55"/><rect x="3" y="13" width="8" height="8" rx="1.5" opacity=".55"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+        Microsoft Entra ID
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <button class="sso-btn" type="button" data-idp="Google Workspace">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5c-2.6 2.6-2.6 14.4 0 17M12 3.5c2.6 2.6 2.6 14.4 0 17M3.5 12h17"/></svg>
+        Google Workspace
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+
+      <div class="auth-notice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg>
+        <span>Ovalvi has no self-serve signup. Accounts are created by your administrator after your organization is onboarded. <a href="request-access.html">Request access →</a></span>
+      </div>
+    </div>
+
+    <div class="auth-foot">
+      <span>© 2026 Ovalvi Inc.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Status</a></span>
+    </div>
+  </main>
+</div>
+
+<script src="assets/js/login.js"></script>
+</body>
+</html>
